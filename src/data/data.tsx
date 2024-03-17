@@ -67,15 +67,15 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Henry Ventura.`,
+  name: `Henry Ventura.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Bogotá DC based <strong className="text-stone-100">Frontend Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Rappi </strong> helping to build and maintain a store management web app called MiTienda.
+        I'm a Bogotá DC based <strong className="text-stone-100">Frontend Software Engineer</strong>, previously worked
+        in <strong className="text-stone-100">Rappi </strong> helping to build and maintain a store management web app called MiTienda.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can see me on <strong className="text-stone-100">Twitch (henryven14)</strong>, streaming video games.
+        In my free time time, i play <strong className="text-stone-100">a video game</strong>, or watch a series or movie.
       </p>
     </>
   ),
@@ -83,7 +83,7 @@ export const heroData: Hero = {
   actions: [
     {
       target: '_blank',
-      href: 'https://drive.google.com/file/d/1G4I0SdI0htnjY9KYy56p3S8x-m7D5949/view?usp=drive_link',
+      href: 'https://drive.google.com/file/d/1DdI9aZcNHCdcKhH6U30cJXLTINJ_hb9T/view?usp=drive_link',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -134,7 +134,7 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'React',
-        level: 9,
+        level: 8,
       },
       {
         name: 'Angular',
@@ -142,11 +142,11 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Typescript',
-        level: 8,
+        level: 9,
       },
       {
         name: 'JavaScript',
-        level: 10,
+        level: 9,
       },
       {
         name: 'Vtex',
@@ -199,7 +199,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Crisantemo Makeup',
     description: 'Crisantemo makeup is a venture in which to invest time to create your own website',
-    url: 'https://crisantemo-makeup.netlify.app/',
+    url: 'https://crisantemomakeup.kesug.com/',
     image: porfolioImage7,
   },
   {
@@ -272,17 +272,17 @@ export const testimonial: TestimonialSection = {
     {
       name: 'Anthony Medina',
       text: 'Its good to have colleagues like Henry who are always available and willing to help.',
-      image: 'https://media.licdn.com/dms/image/D4E35AQEP1PcckTcuaw/profile-framedphoto-shrink_200_200/0/1689257734263?e=1693544400&v=beta&t=YldpjJbsj4V6JomOLneh7AqPubJwLSm2fynp6770v0E',
+      image: 'https://media.licdn.com/dms/image/D4E35AQEP1PcckTcuaw/profile-framedphoto-shrink_200_200/0/1689257734712?e=1711310400&v=beta&t=1PLdnk6wOgZGsD8he8LrcxDJssT4rT7pI3AocoflLos',
     },
     {
       name: 'Shamaru Primera',
       text: 'I have known Henry for many years and we have had the opportunity to work together, I feel that he has grown a lot and has gained very good experiences over time.',
-      image: 'https://media.licdn.com/dms/image/D4E35AQFMYdyyhE_cTA/profile-framedphoto-shrink_200_200/0/1658525643184?e=1693544400&v=beta&t=nkDF42f8in3a1zVZjM1Gy4li0Z8E0NstZWL-EGbubVc',
+      image: 'https://media.licdn.com/dms/image/D4E35AQFMYdyyhE_cTA/profile-framedphoto-shrink_200_200/0/1658525643745?e=1711310400&v=beta&t=R2-VY1CXegbeANbRR7HIhKqbksLgkIribhJ2753U-S8',
     },
     {
       name: 'David Ochoa',
       text: 'Henry is a great professional who shows great skills, he is never afraid to contribute and share his knowledge.',
-      image: 'https://media.licdn.com/dms/image/C4E03AQHTuCpHTXzZoQ/profile-displayphoto-shrink_200_200/0/1664063202869?e=1698278400&v=beta&t=9OHNlWaLD4BQEXkACsUI6C0bDMFBLz7JRSZapxT1imk',
+      image: 'https://media.licdn.com/dms/image/C4E03AQHTuCpHTXzZoQ/profile-displayphoto-shrink_200_200/0/1664063203205?e=1716422400&v=beta&t=-874vY9MDCZERQJfSMjLoiWnmtNbWdNs2yaZIyR1PEs',
     },
   ],
 };
