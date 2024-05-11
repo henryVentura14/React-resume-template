@@ -199,7 +199,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Crisantemo Makeup',
     description: 'Crisantemo makeup is a venture in which to invest time to create your own website',
-    url: 'https://crisantemomakeup.kesug.com/',
+    url: 'https://crisantemomakeup.com/',
     image: porfolioImage7,
   },
   {
