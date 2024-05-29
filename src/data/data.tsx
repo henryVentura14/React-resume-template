@@ -23,6 +23,7 @@ import porfolioImage7 from '../images/portfolio/portfolio-7.png';
 import porfolioImage8 from '../images/portfolio/portfolio-8.png';
 import porfolioImage9 from '../images/portfolio/portfolio-9.png';
 import porfolioImage10 from '../images/portfolio/portfolio-10.png';
+import porfolioImage11 from '../images/portfolio/portfolio-11.png';
 import profilepic from '../images/profile.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -219,6 +220,12 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'Jansport Pe was a project where I participated as a frontend developer',
     url: 'https://www.jansport.pe/',
     image: porfolioImage10,
+  },
+  {
+    title: 'Poke Battle',
+    description: 'It is a pokemon battle app, developed with react and the poke api API',
+    url: 'https://pokebatller.vercel.app/',
+    image: porfolioImage11,
   }
 ];
 
