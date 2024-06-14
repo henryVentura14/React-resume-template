@@ -80,7 +80,8 @@ export interface SkillGroup {
 export interface PortfolioItem {
   title: string;
   description: string;
-  url: string;
+  url?: string;
+  repository?: string;
   image: string | StaticImageData;
 }
 

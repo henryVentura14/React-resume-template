@@ -23,6 +23,7 @@ import porfolioImage8 from '../images/portfolio/portfolio-8.png';
 import porfolioImage9 from '../images/portfolio/portfolio-9.png';
 import porfolioImage10 from '../images/portfolio/portfolio-10.png';
 import porfolioImage11 from '../images/portfolio/portfolio-11.png';
+import porfolioImage12 from '../images/portfolio/portfolio-12.png';
 import profilepic from '../images/profile.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -201,18 +202,21 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'Crisantemo makeup is a venture in which to invest time to create your own website',
     url: 'https://crisantemomakeup.com/',
     image: porfolioImage7,
+    repository: 'https://github.com/henryVentura14/crisantemo',
   },
   {
     title: 'Cryptocurrencies',
     description: 'Cryptocurrencies is an app created by me where you can consume an API that handles information about cryptocurrencies, using the ant Design library',
-    url: 'https://stoic-colden-f27935.netlify.app/',
+    url: 'https://crypto-ant.netlify.app/',
     image: porfolioImage8,
+    repository: 'https://github.com/henryVentura14/Ant-design-crypto-app',
   },
   {
     title: 'MoviesAndSeries',
     description: 'Movies and series is a small app developed by me where I use the IMDB API to display data related to movies and series on the screen, I do it with React js',
-    url: 'https://xenodochial-newton-e42ffc.netlify.app/',
+    url: 'https://movies-and-series-imdb.netlify.app/',
     image: porfolioImage9,
+    repository: 'https://github.com/henryVentura14/Movies-web-app',
   },
   {
     title: 'Jansport Pe',
@@ -225,6 +229,14 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'It is a pokemon battle app, developed with react and the poke api API',
     url: 'https://pokebatller.vercel.app/',
     image: porfolioImage11,
+    repository: 'https://github.com/henryVentura14/Pokebatller',
+  },
+  {
+    title: 'Drinks and recipes',
+    description: 'It is an app where you can find drinks and recipes, developed with react and the thecocktaildb API API',
+    url: 'https://drinks-and-recipes.netlify.app/',
+    image: porfolioImage12,
+    repository: 'https://github.com/henryVentura14/Drinks-and-recipes',
   }
 ];
 
@@ -278,17 +290,17 @@ export const testimonial: TestimonialSection = {
     {
       name: 'Anthony Medina',
       text: 'Its good to have colleagues like Henry who are always available and willing to help.',
-      image: 'https://media.licdn.com/dms/image/D4E35AQEP1PcckTcuaw/profile-framedphoto-shrink_200_200/0/1689257734712?e=1711310400&v=beta&t=1PLdnk6wOgZGsD8he8LrcxDJssT4rT7pI3AocoflLos',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfmARy0OnZne63mLv7c0lMDm-XFKP3GOukLaujWBfiqCmF6kfb1ulD7mFdgHYtYmoUTIQ&usqp=CAU',
     },
     {
       name: 'Shamaru Primera',
       text: 'I have known Henry for many years and we have had the opportunity to work together, I feel that he has grown a lot and has gained very good experiences over time.',
-      image: 'https://media.licdn.com/dms/image/D4E35AQFMYdyyhE_cTA/profile-framedphoto-shrink_200_200/0/1658525643745?e=1711310400&v=beta&t=R2-VY1CXegbeANbRR7HIhKqbksLgkIribhJ2753U-S8',
+      image: 'https://cdn-icons-png.flaticon.com/256/1801/1801308.png',
     },
     {
       name: 'David Ochoa',
       text: 'Henry is a great professional who shows great skills, he is never afraid to contribute and share his knowledge.',
-      image: 'https://media.licdn.com/dms/image/C4E03AQHTuCpHTXzZoQ/profile-displayphoto-shrink_200_200/0/1664063203205?e=1716422400&v=beta&t=-874vY9MDCZERQJfSMjLoiWnmtNbWdNs2yaZIyR1PEs',
+      image: 'https://cdn.iconscout.com/icon/free/png-256/free-laptop-user-1-1179329.png',
     },
   ],
 };
