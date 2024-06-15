@@ -84,8 +84,8 @@ export const heroData: Hero = {
   actions: [
     {
       target: '_blank',
-      href: 'https://drive.google.com/file/d/1DdI9aZcNHCdcKhH6U30cJXLTINJ_hb9T/view?usp=drive_link',
-      text: 'Resume',
+      href: 'https://drive.google.com/file/d/1RXb4ebZ5EsYLZb58uz3YKeUzwUpykZeG/view?usp=sharing',
+      text: 'CV Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
     },
@@ -249,13 +249,9 @@ export const education: TimelineItem[] = [
     location: 'Alonso Gamero University',
     title: 'Computer Engineer',
     content: <p>I learned to perform system security tests, audit web systems and I developed a thesis based on the implementation of a complete system hosted on a web server.</p>,
-  },
-  {
-    date: 'March 2015',
-    location: 'Alonso Gamero University',
-    title: 'Senior computer technician',
-    content: <p>I learned about network and server systems, and how to maintain computer equipment.</p>,
-  },
+    urlTitle: 'https://drive.google.com/file/d/1JCFN99U124h-hcuAxgrYZOXYHiYMJYBn/view',
+    urlLocation: 'https://uptag.net/',
+  }
 ];
 
 export const experience: TimelineItem[] = [

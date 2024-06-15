@@ -93,6 +93,8 @@ export interface TimelineItem {
   location: string;
   title: string;
   content: JSX.Element;
+  urlTitle?: string;
+  urlLocation?: string;
 }
 
 /**
