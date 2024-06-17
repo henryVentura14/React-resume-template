@@ -83,6 +83,7 @@ export interface PortfolioItem {
   url?: string;
   repository?: string;
   image: string | StaticImageData;
+  technologies?: string[];
 }
 
 /**

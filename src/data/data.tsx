@@ -44,7 +44,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Henry Ventura Resume',
-  description: "Henry Ventura Resume",
+  description: 'Henry Ventura Resume',
 };
 
 /**
@@ -52,13 +52,13 @@ export const homePageMeta: HomepageMeta = {
  */
 export const SectionId = {
   Hero: 'hero',
-  About: 'about',
-  Contact: 'contact',
-  Portfolio: 'portfolio',
-  Resume: 'resume',
+  About: 'sobre mí',
+  Contact: 'contáctame',
+  Portfolio: 'portafolio',
+  Resume: 'resumen',
   Skills: 'skills',
   Stats: 'stats',
-  Testimonials: 'testimonials',
+  Testimonials: 'testimonios',
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -68,15 +68,17 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `Henry Ventura.`,
+  name: `Henry J Ventura.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Bogotá DC based <strong className="text-stone-100">Frontend Software Engineer</strong>, previously worked
-        in <strong className="text-stone-100">Rappi </strong> helping to build and maintain a store management web app called MiTienda.
+        Vivo en Bogotá, me dedico al <strong className="text-stone-100">desarrollo aplicaciones web</strong>, trabaje en
+        <strong className="text-stone-100"> Rappi </strong> ayudando a construir y mantener una aplicación web de
+        gestión de tiendas llamada MiTienda.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, i play <strong className="text-stone-100">a video game</strong>, or watch a series or movie.
+        En mis tiempos libres me gusta jugar <strong className="text-stone-100">videojuegos</strong>, ver una película o
+        serie.
       </p>
     </>
   ),
@@ -85,13 +87,13 @@ export const heroData: Hero = {
     {
       target: '_blank',
       href: 'https://drive.google.com/file/d/1RXb4ebZ5EsYLZb58uz3YKeUzwUpykZeG/view?usp=sharing',
-      text: 'CV Resume',
+      text: 'CV en PDF',
       primary: true,
       Icon: ArrowDownTrayIcon,
     },
     {
       href: `#${SectionId.Contact}`,
-      text: 'Contact',
+      text: 'Contáctame',
       primary: false,
     },
   ],
@@ -102,14 +104,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I am a peaceful person, I like to read and learn about general culture and keep up to date with everything that happens in the world of technology.`,
+  description: `Soy un apasionado por la tecnología, me gusta aprender cosas nuevas y siempre estoy en constante aprendizaje, me gusta la programación y el desarrollo web, me gusta trabajar en equipo y aportar mis conocimientos y experiencias.`,
   aboutItems: [
-    {label: 'Location', text: 'Bogota, DC', Icon: MapIcon},
-    {label: 'Age', text: '30', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Venezuelan / Colombian', Icon: FlagIcon},
-    {label: 'Interests', text: 'Video games, Sports, Movies and series', Icon: SparklesIcon},
-    {label: 'Study', text: 'Alonso Gamero University', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Rappi', Icon: BuildingOffice2Icon},
+    {label: 'Ubicación', text: 'Bogota, DC', Icon: MapIcon},
+    {label: 'Edad', text: '30', Icon: CalendarIcon},
+    {label: 'Nacionalidad', text: 'Venezolano / Colombiano', Icon: FlagIcon},
+    {label: 'Pasatiempo', text: 'videojuegos, deportes, peliculas y series', Icon: SparklesIcon},
+    {label: 'Estudios', text: 'Ingeniero en Informática', Icon: AcademicCapIcon},
+    {label: 'Último  empleo', text: 'Desarrollador Frontend - Rappi', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -154,7 +156,7 @@ export const skills: SkillGroup[] = [
         level: 7,
       },
     ],
-  }
+  },
 ];
 
 /**
@@ -166,63 +168,78 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'MyKommu was a project where I participated',
     url: 'https://www.mykommu.com/',
     image: porfolioImage1,
+    technologies: ['React', 'Sass'],
   },
   {
     title: 'Easy CL',
-    description: 'Easy Cl It was quite a difficult project, but we managed to move it forward and deliver it on time, the union of several teams (vtex and itgrlobers)',
+    description:
+      'Easy Cl It was quite a difficult project, but we managed to move it forward and deliver it on time, the union of several teams (vtex and itgrlobers)',
     url: 'https://www.easy.cl/',
     image: porfolioImage2,
+    technologies: ['React', 'Vtex', 'Css', 'Jquery', 'Grunt'],
   },
   {
     title: 'Jumbo Co',
     description: 'Jumbo Co was a project where I participated as a frontend developer',
     url: 'https://www.tiendasjumbo.co/',
     image: porfolioImage3,
+    technologies: ['React', 'Vtex'],
   },
   {
     title: 'Mi Tienda',
-    description: 'Participate in this project contributing many hours of work where you develop complex modules such as the point of sale and onboarding section',
+    description:
+      'Participate in this project contributing many hours of work where you develop complex modules such as the point of sale and onboarding section',
     url: 'https://mitienda.rappi.com.co/',
     image: porfolioImage4,
+    technologies: ['Angular', 'Redux', 'Sass', 'TypeScript', 'Webpack', 'Microfrontends'],
   },
   {
     title: 'Under Armour Co',
     description: 'was a project where I participated as a frontend developer',
     url: 'https://www.underarmour.com.co/',
     image: porfolioImage5,
+    technologies: ['React', 'Vtex'],
   },
   {
     title: 'Esika Co',
     description: 'Esika Co was a project where I participated',
     url: 'https://esika.tiendabelcorp.com.co/',
     image: porfolioImage6,
+    technologies: ['React', 'Vtex'],
   },
   {
     title: 'Crisantemo Makeup',
-    description: 'Crisantemo makeup is a venture in which to invest time to create your own website',
+    description:
+      'Crisantemo makeup is a project that I did from scratch, designing and creating the database, as well as the business logic and the final design, the deployment on the server and domain configuration. It is an ecommerce that sells makeup and facial care.',
     url: 'https://crisantemomakeup.com/',
     image: porfolioImage7,
     repository: 'https://github.com/henryVentura14/crisantemo',
+    technologies: ['AngularJs', 'Css', 'Tailwind', 'Html', 'PHP', 'Mysql'],
   },
   {
     title: 'Cryptocurrencies',
-    description: 'Cryptocurrencies is an app created by me where you can consume an API that handles information about cryptocurrencies, using the ant Design library',
+    description:
+      'Cryptocurrencies is an app created by me where you can consume an API that handles information about cryptocurrencies, using the ant Design library',
     url: 'https://crypto-ant.netlify.app/',
     image: porfolioImage8,
     repository: 'https://github.com/henryVentura14/Ant-design-crypto-app',
+    technologies: ['React', 'AntDesign', 'Css'],
   },
   {
     title: 'MoviesAndSeries',
-    description: 'Movies and series is a small app developed by me where I use the IMDB API to display data related to movies and series on the screen, I do it with React js',
+    description:
+      'Movies and series is a small app developed by me where I use the IMDB API to display data related to movies and series on the screen, I do it with React js',
     url: 'https://movies-and-series-imdb.netlify.app/',
     image: porfolioImage9,
     repository: 'https://github.com/henryVentura14/Movies-web-app',
+    technologies: ['React', 'Css', 'Redux', 'Imdb'],
   },
   {
     title: 'Jansport Pe',
     description: 'Jansport Pe was a project where I participated as a frontend developer',
     url: 'https://www.jansport.pe/',
     image: porfolioImage10,
+    technologies: ['React', 'Vtex'],
   },
   {
     title: 'Poke Battle',
@@ -230,14 +247,17 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://pokebatller.vercel.app/',
     image: porfolioImage11,
     repository: 'https://github.com/henryVentura14/Pokebatller',
+    technologies: ['React', 'Tailwind', 'Context', 'PokeApi'],
   },
   {
     title: 'Drinks and recipes',
-    description: 'It is an app where you can find drinks and recipes, developed with react and the thecocktaildb API API',
+    description:
+      'It is an app where you can find drinks and recipes, developed with react and the thecocktaildb API API',
     url: 'https://drinks-and-recipes.netlify.app/',
     image: porfolioImage12,
     repository: 'https://github.com/henryVentura14/Drinks-and-recipes',
-  }
+    technologies: ['React', 'Bootstrap', 'Context', 'Thecocktaildb'],
+  },
 ];
 
 /**
@@ -245,33 +265,42 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2018',
-    location: 'Alonso Gamero University',
-    title: 'Computer Engineer',
-    content: <p>I learned to perform system security tests, audit web systems and I developed a thesis based on the implementation of a complete system hosted on a web server.</p>,
+    date: 'Abril 2018',
+    location: 'Universidad Politécnica Territorial de Falcón Alonso Gamero',
+    title: 'Ingeniero en Informática',
+    content: (
+      <p>
+        Aprendí a realizar pruebas de seguridad de sistemas, auditar sistemas web y desarrollé una tesis basada en la
+        implementación de un sistema completo alojado en un servidor web.
+      </p>
+    ),
     urlTitle: 'https://drive.google.com/file/d/1JCFN99U124h-hcuAxgrYZOXYHiYMJYBn/view',
     urlLocation: 'https://uptag.net/',
-  }
+  },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'May 2022 - Present',
-    location: 'Rappi - Awesome Development Company',
-    title: 'Frontend Developer Semi Senior ',
+    date: 'Mayo 2022 - Abril 2024',
+    location: 'Rappi - Impresionante empresa de tecnología',
+    title: 'Desarrollador frontend semi senior',
     content: (
       <p>
-        My first experience in a large Latam company, I have learned a lot about how a great development team is formed and what role each team member plays, I have learned a lot about agile methodologies and how to multiply my productivity, it is a very demanding company that employ at least 100% of its employees
+        Mi primera experiencia en una gran empresa de Latam, he aprendido mucho sobre como se forma un gran equipo de
+        desarrollo y que rol juega cada miembro del equipo, he aprendido mucho sobre metodologías ágiles y como
+        multiplicar mi productividad, es un trabajo muy exigente. Empresa que emplea al menos al 100% de sus empleados.
       </p>
     ),
   },
   {
-    date: 'September 2021 - May 2022',
-    location: 'Itglobers - Very good technology agency (e-commerce)',
-    title: 'Front End Web Developer',
+    date: 'Septiembre 2021 - Mayo 2022',
+    location: 'Itglobers - Muy buena agencia de tecnología (e-commerce)',
+    title: 'Desarrollador frontend',
     content: (
       <p>
-        Face good challenges and great projects, manage to carry out stagnant projects and offer my 100% support, work hand in hand with the VTEX team and provide technological solutions to major brands such as ESIKA, VELEZ and the CENCOSUD group
+        Enfrente buenos retos y grandes proyectos, lograr sacar adelante proyectos estancados y ofrecer mi apoyo 100%,
+        trabajo de la mano del equipo de VTEX y brindar soluciones tecnológicas a grandes marcas como ESIKA, VELEZ y la
+        grupo CENCOSUD
       </p>
     ),
   },
@@ -285,17 +314,18 @@ export const testimonial: TestimonialSection = {
   testimonials: [
     {
       name: 'Anthony Medina',
-      text: 'Its good to have colleagues like Henry who are always available and willing to help.',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfmARy0OnZne63mLv7c0lMDm-XFKP3GOukLaujWBfiqCmF6kfb1ulD7mFdgHYtYmoUTIQ&usqp=CAU',
+      text: 'Es bueno tener colegas como Henry que siempre están disponibles y dispuestos a ayudar.',
+      image:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfmARy0OnZne63mLv7c0lMDm-XFKP3GOukLaujWBfiqCmF6kfb1ulD7mFdgHYtYmoUTIQ&usqp=CAU',
     },
     {
       name: 'Shamaru Primera',
-      text: 'I have known Henry for many years and we have had the opportunity to work together, I feel that he has grown a lot and has gained very good experiences over time.',
+      text: 'Conozco a Henry desde hace muchos años y hemos tenido la oportunidad de trabajar juntos, siento que ha crecido mucho y ha adquirido muy buenas experiencias con el tiempo.',
       image: 'https://cdn-icons-png.flaticon.com/256/1801/1801308.png',
     },
     {
       name: 'David Ochoa',
-      text: 'Henry is a great professional who shows great skills, he is never afraid to contribute and share his knowledge.',
+      text: 'Henry es un gran profesional que demuestra grandes habilidades, nunca tiene miedo de contribuir y compartir sus conocimientos.',
       image: 'https://cdn.iconscout.com/icon/free/png-256/free-laptop-user-1-1179329.png',
     },
   ],
@@ -306,8 +336,8 @@ export const testimonial: TestimonialSection = {
  */
 
 export const contact: ContactSection = {
-  headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  headerText: 'Ponte en contacto conmigo.',
+  description: 'Puedes escribir un correo electrónico o por alguna de mis redes sociales.',
   items: [
     {
       type: ContactType.Email,

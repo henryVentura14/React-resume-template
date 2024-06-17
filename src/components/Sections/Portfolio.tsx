@@ -1,4 +1,4 @@
-import {XCircleIcon} from '@heroicons/react/24/outline';
+import {LinkIcon, XCircleIcon} from '@heroicons/react/24/outline';
 import classNames from 'classnames';
 import Image from 'next/image';
 import {FC, memo, MouseEvent, useCallback, useEffect, useRef, useState} from 'react';
@@ -37,30 +37,29 @@ const Portfolio: FC = memo(() => {
   }, []);
 
   return (
-    <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
+    <Section className="bg-neutral-900" sectionId={SectionId.Portfolio}>
       <div className="flex flex-col gap-y-8">
-        <h2 className="self-center text-xl font-bold text-white">Check out some of my work</h2>
+        <h2 className="self-center text-xl font-bold text-white">Mira algunos de mis trabajos</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {portfolioItems.map((item, index) => (
             <div key={`${item.title}-${index}`}>
               <div
                 className={classNames(
                   'relative h-40 w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl bg-white flex items-center justify-center',
-                )}
-              >
+                )}>
                 <Image
                   alt={item.title}
                   className="object-contain h-full w-full"
+                  loading="lazy"
                   placeholder="blur"
                   src={item.image}
                 />
                 <a
                   className="absolute inset-0 bg-gray-900 bg-opacity-0 hover:bg-opacity-80 transition-all duration-300 flex items-center justify-center"
                   href={item.url}
-                  onClick={(e) => handleItemClick(e, item)}
+                  onClick={e => handleItemClick(e, item)}
                   ref={linkRef}
-                  target="_blank"
-                >
+                  target="_blank">
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="text-center">
                       <h2 className="text-white font-bold">{item.title}</h2>
@@ -76,17 +75,15 @@ const Portfolio: FC = memo(() => {
         <div
           className={classNames('fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50', {
             hidden: !showModal,
-          })}
-        >
+          })}>
           <div className="bg-white rounded-lg shadow-lg p-8 max-w-3xl mx-auto flex flex-col" ref={modalRef}>
             <header className="flex justify-end mb-4">
               <button
                 aria-label="Close modal"
                 className="text-gray-700 hover:text-gray-900"
                 onClick={handleCloseModal}
-                type="button"
-              >
-                <XCircleIcon className="h-6 w-6" />
+                type="button">
+                <XCircleIcon className="h-8 w-8" />
               </button>
             </header>
             <div className="flex items-center justify-center">
@@ -102,15 +99,27 @@ const Portfolio: FC = memo(() => {
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">{selectedItem.title}</h2>
                 <p className="text-sm text-gray-800 mb-4">{selectedItem.description}</p>
                 <div className="mb-4">
+                  {selectedItem.technologies && (
+                    <div className="flex flex-wrap gap-2">
+                      {selectedItem.technologies.map((tech, index) => (
+                        <span
+                          className="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300"
+                          key={`${tech}-${index}`}>
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+                <div className="mb-4">
                   <a
                     className="text-blue-500 underline"
                     href={selectedItem.url}
-                    onClick={(e) => e.stopPropagation()}
+                    onClick={e => e.stopPropagation()}
                     ref={demoLinkRef}
                     rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    Link
+                    target="_blank">
+                    <LinkIcon className="h-4 w-4 inline-block" /> Link to demo
                   </a>
                 </div>
                 {selectedItem.repository && (
@@ -118,12 +127,11 @@ const Portfolio: FC = memo(() => {
                     <a
                       className="text-blue-500 underline"
                       href={selectedItem.repository}
-                      onClick={(e) => e.stopPropagation()}
+                      onClick={e => e.stopPropagation()}
                       ref={githubLinkRef}
                       rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      Repository
+                      target="_blank">
+                      <LinkIcon className="h-4 w-4 inline-block" /> Link to repository
                     </a>
                   </div>
                 )}
