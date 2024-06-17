@@ -165,22 +165,23 @@ export const skills: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Mykommu',
-    description: 'MyKommu was a project where I participated',
+    description:
+      'MyKommu es una app de gestión de eventos y seminarios web, un proyecto donde tuve la oportunidad de participar las primeras versiones de esta app, donde aprendí mucho sobre el desarrollo con react',
     url: 'https://www.mykommu.com/',
     image: porfolioImage1,
-    technologies: ['React', 'Sass'],
+    technologies: ['React', 'Sass', 'Redux', 'Webpack'],
   },
   {
     title: 'Easy CL',
     description:
-      'Easy Cl It was quite a difficult project, but we managed to move it forward and deliver it on time, the union of several teams (vtex and itgrlobers)',
+      'Easy Cl es un e-commerce de una de las ferreterías más grandes y populares en LATAM, fue un proyecto bastante retador, pero logramos sacarlo adelante y entregarlo a tiempo, la unión de varios equipos (vtex e itglobers).',
     url: 'https://www.easy.cl/',
     image: porfolioImage2,
     technologies: ['React', 'Vtex', 'Css', 'Jquery', 'Grunt'],
   },
   {
     title: 'Jumbo Co',
-    description: 'Jumbo Co was a project where I participated as a frontend developer',
+    description: 'Jumbo.co es una tienda online que pertenece a una cadena de supermercados muy famosos en LATAM, tuve la oportunidad de desarrollar parte de sus funcionalidades.',
     url: 'https://www.tiendasjumbo.co/',
     image: porfolioImage3,
     technologies: ['React', 'Vtex'],
@@ -188,21 +189,21 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Mi Tienda',
     description:
-      'Participate in this project contributing many hours of work where you develop complex modules such as the point of sale and onboarding section',
+      'Mi Tienda es una app para la gestión de e-commerce que pertenece a Rappi, brinda muchas opciones de configuración de tiendas, campañas, productos y horarios, participe en este proyecto aportando muchas horas de trabajo donde desarrollas módulos complejos como la sección de puntos de venta y onboarding.',
     url: 'https://mitienda.rappi.com.co/',
     image: porfolioImage4,
     technologies: ['Angular', 'Redux', 'Sass', 'TypeScript', 'Webpack', 'Microfrontends'],
   },
   {
     title: 'Under Armour Co',
-    description: 'was a project where I participated as a frontend developer',
+    description: 'Under Armour es una marca famosa de ropa e implementos deportivos a nivel mundial, participé como desarrollador frontend developer de este proyecto de e-commerce.',
     url: 'https://www.underarmour.com.co/',
     image: porfolioImage5,
     technologies: ['React', 'Vtex'],
   },
   {
     title: 'Esika Co',
-    description: 'Esika Co was a project where I participated',
+    description: 'Esika es una famosa marca de belleza, participé como desarrollador frontend developer de este proyecto de e-commerce.',
     url: 'https://esika.tiendabelcorp.com.co/',
     image: porfolioImage6,
     technologies: ['React', 'Vtex'],
@@ -210,7 +211,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Crisantemo Makeup',
     description:
-      'Crisantemo makeup is a project that I did from scratch, designing and creating the database, as well as the business logic and the final design, the deployment on the server and domain configuration. It is an ecommerce that sells makeup and facial care.',
+      'Crisantemo es un proyecto que cree desde cero, diseñando y creando la de datos, así como la lógica de negocio y el diseño final, la implementación del servidor y la configuración del dominio. Es un negocio electrónico que vende maquillaje y cuidado facial.',
     url: 'https://crisantemomakeup.com/',
     image: porfolioImage7,
     repository: 'https://github.com/henryVentura14/crisantemo',
@@ -219,7 +220,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Cryptocurrencies',
     description:
-      'Cryptocurrencies is an app created by me where you can consume an API that handles information about cryptocurrencies, using the ant Design library',
+      'Cryptocurrencies es una app creada por mí donde puedes consumir una API que maneja información sobre criptomonedas, esta app sirve para conocer el valor actual de cualquier cripto moneda y conversión de precios en monedas de LATAM como el peso colombiano, el peso chileno o el peso argentino.',
     url: 'https://crypto-ant.netlify.app/',
     image: porfolioImage8,
     repository: 'https://github.com/henryVentura14/Ant-design-crypto-app',
@@ -228,7 +229,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'MoviesAndSeries',
     description:
-      'Movies and series is a small app developed by me where I use the IMDB API to display data related to movies and series on the screen, I do it with React js',
+      'Movies and series es una pequeña aplicación desarrollada por mí donde uso la API de IMDB para mostrar datos relacionados con películas y series en pantalla, cuenta con un buscador, una lista de películas y un modal donde podemos ver más información de cada serie o película.',
     url: 'https://movies-and-series-imdb.netlify.app/',
     image: porfolioImage9,
     repository: 'https://github.com/henryVentura14/Movies-web-app',
@@ -236,14 +237,14 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Jansport Pe',
-    description: 'Jansport Pe was a project where I participated as a frontend developer',
+    description: 'Jansport Pe es una famosa marca de moda, que venden maletas y tenis, participé como desarrollador frontend developer de este proyecto de e-commerce.',
     url: 'https://www.jansport.pe/',
     image: porfolioImage10,
     technologies: ['React', 'Vtex'],
   },
   {
     title: 'Poke Battle',
-    description: 'It is a pokemon battle app, developed with react and the poke api API',
+    description: '¡Esta épica app la desarrollé para emular las batallas Pokémon que teníamos al jugar algunos de los videojuegos más famosos de la saga, donde podemos listar o buscar 3 Pokémon y enfrentarlos a otros 3 Pokémon esta aplicación determinara quien es el ganador sumando las estadistas de cada equipo el que tenga más, gana!',
     url: 'https://pokebatller.vercel.app/',
     image: porfolioImage11,
     repository: 'https://github.com/henryVentura14/Pokebatller',
@@ -252,7 +253,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Drinks and recipes',
     description:
-      'It is an app where you can find drinks and recipes, developed with react and the thecocktaildb API API',
+      'Es una aplicación donde puedes encontrar bebidas y recetas, desarrollada con reaccionar y la API thecocktaildb.',
     url: 'https://drinks-and-recipes.netlify.app/',
     image: porfolioImage12,
     repository: 'https://github.com/henryVentura14/Drinks-and-recipes',
@@ -330,10 +331,6 @@ export const testimonial: TestimonialSection = {
     },
   ],
 };
-
-/**
- * Contact section
- */
 
 export const contact: ContactSection = {
   headerText: 'Ponte en contacto conmigo.',

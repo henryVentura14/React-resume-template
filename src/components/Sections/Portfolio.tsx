@@ -119,7 +119,7 @@ const Portfolio: FC = memo(() => {
                     ref={demoLinkRef}
                     rel="noopener noreferrer"
                     target="_blank">
-                    <LinkIcon className="h-4 w-4 inline-block" /> Link to demo
+                    <LinkIcon className="h-4 w-4 inline-block" /> Link de la app
                   </a>
                 </div>
                 {selectedItem.repository && (
@@ -131,7 +131,7 @@ const Portfolio: FC = memo(() => {
                       ref={githubLinkRef}
                       rel="noopener noreferrer"
                       target="_blank">
-                      <LinkIcon className="h-4 w-4 inline-block" /> Link to repository
+                      <LinkIcon className="h-4 w-4 inline-block" /> Link de github
                     </a>
                   </div>
                 )}
