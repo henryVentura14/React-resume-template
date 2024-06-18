@@ -11,6 +11,7 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
+import XIcon from '../components/Icon/XIcon';
 import heroImage from '../images/bogota.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.png';
 import porfolioImage2 from '../images/portfolio/portfolio-2.png';
@@ -352,6 +353,11 @@ export const contact: ContactSection = {
       href: 'https://www.instagram.com/henry_jahaz/',
     },
     {
+      type: ContactType.X,
+      text: '@HenryVenturaDev',
+      href: 'https://x.com/HenryVenturaDev',
+    },
+    {
       type: ContactType.Github,
       text: 'henryVentura14',
       href: 'https://github.com/henryVentura14',
@@ -366,4 +372,5 @@ export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/henryVentura14'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/henry-j-ventura/'},
   {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/henry_jahaz/'},
+  {label: 'X', Icon: XIcon, href: 'https://x.com/HenryVenturaDev'},
 ];
