@@ -73,7 +73,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Vivo en Bogotá, me dedico al <strong className="text-stone-100">desarrollo aplicaciones web</strong>, trabaje en
+        Vivo en Bogotá, me dedico al desarrollo de<strong className="text-stone-100">aplicaciones web</strong>, trabaje en
         <strong className="text-stone-100"> Rappi </strong> ayudando a construir y mantener una aplicación web de
         gestión de tiendas llamada MiTienda.
       </p>
