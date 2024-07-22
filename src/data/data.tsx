@@ -252,13 +252,13 @@ export const portfolioItems: PortfolioItem[] = [
     technologies: ['React', 'Tailwind', 'Context', 'PokeApi'],
   },
   {
-    title: 'Drinks and recipes',
+    title: 'Ecommerce vanilla js',
     description:
-      'Es una aplicación donde puedes encontrar bebidas y recetas, desarrollada con reaccionar y la API thecocktaildb.',
-    url: 'https://drinks-and-recipes.netlify.app/',
+      'Es un proyecto de E-commerce que cuenta con un diseño personalizado, es 100% responsivo, cuenta con un carousel hecho solo con javascript vanilla y se uso el paradigma OOP.',
+    url: 'https://vanillajs-hvg-ecomm.netlify.app/',
     image: porfolioImage12,
-    repository: 'https://github.com/henryVentura14/Drinks-and-recipes',
-    technologies: ['React', 'Bootstrap', 'Context', 'Thecocktaildb'],
+    repository: 'https://github.com/henryVentura14/Ecommerce-vanilla-js',
+    technologies: ['Javascript', 'Scss', 'Webpack', 'Custom API'],
   },
 ];
 
