@@ -14,7 +14,7 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
         <title>{title}</title>
         <meta content={description} name="description" />
 
-        <link href={`https://reactresume.com${pathname}`} key="canonical" rel="canonical" />
+        <link href={`https://henry-ventura.vercel.app${pathname}`} key="canonical" rel="canonical" />
 
         <link href="/favicon.ico" rel="icon" sizes="any" />
         <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
@@ -22,7 +22,7 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
 
         <meta content={title} property="og:title" />
         <meta content={description} property="og:description" />
-        <meta content={`https://reactresume.com${pathname}`} property="og:url" />
+        <meta content={`https://henry-ventura.vercel.app${pathname}`} property="og:url" />
 
       </Head>
       {children}

@@ -228,13 +228,13 @@ export const portfolioItems: PortfolioItem[] = [
     technologies: ['React', 'AntDesign', 'Css'],
   },
   {
-    title: 'MoviesAndSeries',
+    title: 'Dragon Ball Vue',
     description:
-      'Movies and series es una pequeña aplicación desarrollada por mí donde uso la API de IMDB para mostrar datos relacionados con películas y series en pantalla, cuenta con un buscador, una lista de películas y un modal donde podemos ver más información de cada serie o película.',
-    url: 'https://movies-and-series-imdb.netlify.app/',
+      'Desarrollé una aplicación web interactiva utilizando Vue 3, TypeScript y Tailwind CSS que permite a los usuarios explorar personajes del universo Dragon Ball de manera eficiente y atractiva. La aplicación consume la API de Dragon Ball para proporcionar una experiencia rica en datos y visualmente atractiva. La app nos permite visualizar y buscar los personajes, además cuenta con una carga progresiva mediante el scroll de la página.',
+    url: 'https://dragon-ball-one.vercel.app/',
     image: porfolioImage9,
-    repository: 'https://github.com/henryVentura14/Movies-web-app',
-    technologies: ['React', 'Css', 'Redux', 'Imdb'],
+    repository: 'https://github.com/henryVentura14/Dragon-ball-vue',
+    technologies: ['Vue3', 'Tailwind', 'DragonballApi', 'Vite'],
   },
   {
     title: 'Jansport Pe',
