@@ -73,13 +73,24 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Vivo en Bogotá, me dedico al desarrollo de <strong className="text-stone-100"> aplicaciones web</strong>, trabaje en
-        <strong className="text-stone-100"> Rappi </strong> ayudando a construir y mantener una aplicación web de
-        gestión de tiendas llamada MiTienda.
+        Soy desarrollador web, vivo en <strong className="text-stone-100">Bogotá</strong> cuento con experiencia en la
+        creación de soluciones digitales personalizadas. Actualmente trabajo en
+        <strong className="text-stone-100"> Gradiweb</strong>, donde desarrollo funcionalidades a medida utilizando{' '}
+        <strong className="text-stone-100">Liquid</strong>, adapto temas y módulos para cumplir con los requisitos
+        específicos de cada cliente, e integro
+        <strong className="text-stone-100"> GraphQL</strong> para optimizar la carga de datos y mejorar la experiencia
+        del usuario. También empleo tecnologías modernas como
+        <strong className="text-stone-100"> Remix</strong> y <strong className="text-stone-100">TypeScript</strong> para
+        construir aplicaciones web escalables y de alto rendimiento.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        En mis tiempos libres me gusta jugar <strong className="text-stone-100">videojuegos</strong>, ver una película o
-        serie.
+        Antes de Gradiweb, trabajé en <strong className="text-stone-100">Rappi</strong>, colaborando en la construcción
+        y mantenimiento de <strong className="text-stone-100">MiTienda</strong>, una aplicación web de gestión de
+        tiendas.
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        En mi tiempo libre disfruto de los <strong className="text-stone-100">videojuegos</strong>, las{' '}
+        <strong className="text-stone-100">películas</strong> y las <strong className="text-stone-100">series</strong>.
       </p>
     </>
   ),
@@ -105,14 +116,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Soy un apasionado por la tecnología, me gusta aprender cosas nuevas y siempre estoy en constante aprendizaje, me gusta la programación y el desarrollo web, me gusta trabajar en equipo y aportar mis conocimientos y experiencias.`,
+  description: `Apasionado por la tecnología, disfruto aprender continuamente y mantenerme al día con las tendencias del desarrollo web. La programación y el diseño de soluciones innovadoras son mi mayor motivación. Valoro el trabajo en equipo y me encanta compartir conocimientos y experiencias para contribuir al éxito colectivo.`,
   aboutItems: [
     {label: 'Ubicación', text: 'Bogota, DC', Icon: MapIcon},
-    {label: 'Edad', text: '30', Icon: CalendarIcon},
+    {label: 'Edad', text: '31', Icon: CalendarIcon},
     {label: 'Nacionalidad', text: 'Venezolano / Colombiano', Icon: FlagIcon},
-    {label: 'Pasatiempo', text: 'videojuegos, deportes, peliculas y series', Icon: SparklesIcon},
+    {label: 'Pasatiempo', text: 'Videojuegos, deportes, peliculas y series', Icon: SparklesIcon},
     {label: 'Estudios', text: 'Ingeniero en Informática', Icon: AcademicCapIcon},
-    {label: 'Último  empleo', text: 'Desarrollador Frontend - Rappi', Icon: BuildingOffice2Icon},
+    {label: 'Último  empleo', text: 'Desarrollador web - Gradiweb', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -182,7 +193,8 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Jumbo Co',
-    description: 'Jumbo.co es una tienda online que pertenece a una cadena de supermercados muy famosos en LATAM, tuve la oportunidad de desarrollar parte de sus funcionalidades.',
+    description:
+      'Jumbo.co es una tienda online que pertenece a una cadena de supermercados muy famosos en LATAM, tuve la oportunidad de desarrollar parte de sus funcionalidades.',
     url: 'https://www.tiendasjumbo.co/',
     image: porfolioImage3,
     technologies: ['React', 'Vtex'],
@@ -197,14 +209,16 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Under Armour Co',
-    description: 'Under Armour es una marca famosa de ropa e implementos deportivos a nivel mundial, participé como desarrollador frontend developer de este proyecto de e-commerce.',
+    description:
+      'Under Armour es una marca famosa de ropa e implementos deportivos a nivel mundial, participé como desarrollador frontend developer de este proyecto de e-commerce.',
     url: 'https://www.underarmour.com.co/',
     image: porfolioImage5,
     technologies: ['React', 'Vtex'],
   },
   {
     title: 'Esika Co',
-    description: 'Esika es una famosa marca de belleza, participé como desarrollador frontend developer de este proyecto de e-commerce.',
+    description:
+      'Esika es una famosa marca de belleza, participé como desarrollador frontend developer de este proyecto de e-commerce.',
     url: 'https://esika.tiendabelcorp.com.co/',
     image: porfolioImage6,
     technologies: ['React', 'Vtex'],
@@ -238,14 +252,16 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Jansport Pe',
-    description: 'Jansport Pe es una famosa marca de moda, que venden maletas y tenis, participé como desarrollador frontend developer de este proyecto de e-commerce.',
+    description:
+      'Jansport Pe es una famosa marca de moda, que venden maletas y tenis, participé como desarrollador frontend developer de este proyecto de e-commerce.',
     url: 'https://www.jansport.pe/',
     image: porfolioImage10,
     technologies: ['React', 'Vtex'],
   },
   {
     title: 'Poke Battle',
-    description: '¡Esta épica app la desarrollé para emular las batallas Pokémon que teníamos al jugar algunos de los videojuegos más famosos de la saga, donde podemos listar o buscar 3 Pokémon y enfrentarlos a otros 3 Pokémon esta aplicación determinara quien es el ganador sumando las estadistas de cada equipo el que tenga más, gana!',
+    description:
+      '¡Esta épica app la desarrollé para emular las batallas Pokémon que teníamos al jugar algunos de los videojuegos más famosos de la saga, donde podemos listar o buscar 3 Pokémon y enfrentarlos a otros 3 Pokémon esta aplicación determinara quien es el ganador sumando las estadistas de cada equipo el que tenga más, gana!',
     url: 'https://pokebatller.vercel.app/',
     image: porfolioImage11,
     repository: 'https://github.com/henryVentura14/Pokebatller',
@@ -283,26 +299,27 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
+    date: 'Agosto 2024 - Actualidad',
+    location: 'Gradiweb - Gradiweb | Agencia E-commerce Shopify Partner',
+    title: 'Desarrollador Web',
+    content: (
+      <p>
+        Desarrollo de funcionalidades personalizadas con Liquid, adaptando temas y módulos para cumplir con los requisitos específicos de cada cliente.
+        Integración y consultas con GraphQL para optimizar la carga de datos y mejorar la experiencia del usuario.
+        Uso de Remix y JavaScript para construir aplicaciones web modernas y escalables, garantizando un rendimiento fluido tanto en el cliente como en el servidor.
+        Mantenimiento y mejora continua de los sitios existentes, abordando problemas de rendimiento y aplicando actualizaciones que aseguren la estabilidad y eficiencia de las plataformas.
+      </p>
+    ),
+  },
+  {
     date: 'Mayo 2022 - Abril 2024',
-    location: 'Rappi - Impresionante empresa de tecnología',
-    title: 'Desarrollador frontend semi senior',
+    location: 'Rappi - S.A.S',
+    title: 'Desarrollador Frontend',
     content: (
       <p>
         Mi primera experiencia en una gran empresa de Latam, he aprendido mucho sobre como se forma un gran equipo de
         desarrollo y que rol juega cada miembro del equipo, he aprendido mucho sobre metodologías ágiles y como
         multiplicar mi productividad, es un trabajo muy exigente. Empresa que emplea al menos al 100% de sus empleados.
-      </p>
-    ),
-  },
-  {
-    date: 'Septiembre 2021 - Mayo 2022',
-    location: 'Itglobers - Muy buena agencia de tecnología (e-commerce)',
-    title: 'Desarrollador frontend',
-    content: (
-      <p>
-        Enfrente buenos retos y grandes proyectos, lograr sacar adelante proyectos estancados y ofrecer mi apoyo 100%,
-        trabajo de la mano del equipo de VTEX y brindar soluciones tecnológicas a grandes marcas como ESIKA, VELEZ y la
-        grupo CENCOSUD
       </p>
     ),
   },
