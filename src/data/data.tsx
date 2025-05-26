@@ -111,6 +111,22 @@ export const heroData: Hero = {
   ],
 };
 
+// Add birth date constant
+const BIRTH_DATE = new Date('1993-06-23');
+
+// Function to calculate age
+const calculateAge = (birthDate: Date): number => {
+  const today = new Date();
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDiff = today.getMonth() - birthDate.getMonth();
+  
+  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+  
+  return age;
+};
+
 /**
  * About section
  */
@@ -119,7 +135,7 @@ export const aboutData: About = {
   description: `Apasionado por la tecnología, disfruto aprender continuamente y mantenerme al día con las tendencias del desarrollo web. La programación y el diseño de soluciones innovadoras son mi mayor motivación. Valoro el trabajo en equipo y me encanta compartir conocimientos y experiencias para contribuir al éxito colectivo.`,
   aboutItems: [
     {label: 'Ubicación', text: 'Bogota, DC', Icon: MapIcon},
-    {label: 'Edad', text: '31', Icon: CalendarIcon},
+    {label: 'Edad', text: calculateAge(BIRTH_DATE).toString(), Icon: CalendarIcon},
     {label: 'Nacionalidad', text: 'Venezolano / Colombiano', Icon: FlagIcon},
     {label: 'Pasatiempo', text: 'Videojuegos, deportes, peliculas y series', Icon: SparklesIcon},
     {label: 'Estudios', text: 'Ingeniero en Informática', Icon: AcademicCapIcon},
@@ -224,13 +240,12 @@ export const portfolioItems: PortfolioItem[] = [
     technologies: ['React', 'Vtex'],
   },
   {
-    title: 'Crisantemo Makeup',
+    title: 'Generik Paris',
     description:
-      'Crisantemo es un proyecto que cree desde cero, diseñando y creando la de datos, así como la lógica de negocio y el diseño final, la implementación del servidor y la configuración del dominio. Es un negocio electrónico que vende maquillaje y cuidado facial.',
-    url: 'https://crisantemomakeup.com/',
+      'Tuve la oportunidad de colaborar en el desarrollo de una tienda en línea basada en Shopify, orientada a la venta de productos de belleza en Francia. El proyecto incluyó personalizaciones avanzadas para implementar promociones especiales, así como funcionalidades específicas para la gestión de mercados y localización del contenido. Se priorizó una experiencia de usuario optimizada y adaptada al público objetivo, asegurando la escalabilidad de la tienda y su alineación con las necesidades comerciales del cliente.',
+    url: 'https://generik.fr/',
     image: porfolioImage7,
-    repository: 'https://github.com/henryVentura14/crisantemo',
-    technologies: ['AngularJs', 'Css', 'Tailwind', 'Html', 'PHP', 'Mysql'],
+    technologies: ['Shopify', 'Scss', 'Liquid', 'Javascript', 'Remix', 'TypeScript'],
   },
   {
     title: 'Cryptocurrencies',
@@ -268,13 +283,13 @@ export const portfolioItems: PortfolioItem[] = [
     technologies: ['React', 'Tailwind', 'Context', 'PokeApi'],
   },
   {
-    title: 'Ecommerce vanilla js',
+    title: 'KeyGameStore landing page',
     description:
-      'Es un proyecto de E-commerce que cuenta con un diseño personalizado, es 100% responsivo, cuenta con un carousel hecho solo con javascript vanilla y se uso el paradigma OOP.',
-    url: 'https://vanillajs-hvg-ecomm.netlify.app/',
+      'Es proyecto sencillo es un landing page para una tienda de claves de videojuegos',
+    url: 'https://keygamestore.netlify.app/',
     image: porfolioImage12,
-    repository: 'https://github.com/henryVentura14/Ecommerce-vanilla-js',
-    technologies: ['Javascript', 'Scss', 'Webpack', 'Custom API'],
+    repository: 'https://github.com/henryVentura14/KeyGameStore',
+    technologies: ['Javascript', 'Css', 'HTML'],
   },
 ];
 

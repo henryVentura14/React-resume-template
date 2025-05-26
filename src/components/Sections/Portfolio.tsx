@@ -62,7 +62,7 @@ const Portfolio: FC = memo(() => {
                   target="_blank">
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="text-center">
-                      <h2 className="text-white font-bold">{item.title}</h2>
+                      <h2 className="text-white font-bold bg-black bg-opacity-50 px-3 py-1 rounded">{item.title}</h2>
                     </div>
                   </div>
                 </a>
