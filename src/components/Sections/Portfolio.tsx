@@ -73,10 +73,10 @@ const Portfolio: FC = memo(() => {
       </div>
       {selectedItem && (
         <div
-          className={classNames('fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50', {
+          className={classNames('fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4', {
             hidden: !showModal,
           })}>
-          <div className="bg-white rounded-lg shadow-lg p-8 max-w-3xl mx-auto flex flex-col" ref={modalRef}>
+          <div className="bg-white rounded-lg shadow-lg p-4 sm:p-8 max-w-3xl mx-auto flex flex-col" ref={modalRef}>
             <header className="flex justify-end mb-4">
               <button
                 aria-label="Close modal"
@@ -86,8 +86,8 @@ const Portfolio: FC = memo(() => {
                 <XCircleIcon className="h-8 w-8" />
               </button>
             </header>
-            <div className="flex items-center justify-center">
-              <div className="w-1/2 pr-4 bg-white flex items-center justify-center h-80 rounded-lg">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+              <div className="w-full md:w-1/2 bg-white flex items-center justify-center h-64 md:h-80 rounded-lg">
                 <Image
                   alt={selectedItem.title}
                   className="object-contain h-full w-full"
@@ -95,7 +95,7 @@ const Portfolio: FC = memo(() => {
                   src={selectedItem.image}
                 />
               </div>
-              <div className="w-1/2 pl-4 z-50">
+              <div className="w-full md:w-1/2 z-50">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">{selectedItem.title}</h2>
                 <p className="text-sm text-gray-800 mb-4">{selectedItem.description}</p>
                 <div className="mb-4">

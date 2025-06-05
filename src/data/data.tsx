@@ -283,7 +283,7 @@ export const portfolioItems: PortfolioItem[] = [
     technologies: ['React', 'Tailwind', 'Context', 'PokeApi'],
   },
   {
-    title: 'KeyGameStore landing page',
+    title: 'KeyGameStore',
     description:
       'Es proyecto sencillo es un landing page para una tienda de claves de videojuegos',
     url: 'https://keygamestore.netlify.app/',
