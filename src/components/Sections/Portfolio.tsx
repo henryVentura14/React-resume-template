@@ -1,4 +1,3 @@
-import {LinkIcon, XCircleIcon} from '@heroicons/react/24/outline';
 import classNames from 'classnames';
 import Image from 'next/image';
 import {FC, memo, MouseEvent, useCallback, useEffect, useRef, useState} from 'react';
@@ -8,6 +7,7 @@ import {portfolioItems, SectionId} from '../../data/data';
 import {PortfolioItem} from '../../data/dataDef';
 import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
 import Section from '../Layout/Section';
+import PortfolioModal from './Portfolio/PortfolioModal';
 
 const Portfolio: FC = memo(() => {
   const [selectedItem, setSelectedItem] = useState<PortfolioItem | null>(null);
@@ -71,75 +71,15 @@ const Portfolio: FC = memo(() => {
           ))}
         </div>
       </div>
-      {selectedItem && (
-        <div
-          className={classNames('fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4', {
-            hidden: !showModal,
-          })}>
-          <div className="bg-white rounded-lg shadow-lg p-4 sm:p-8 max-w-3xl mx-auto flex flex-col" ref={modalRef}>
-            <header className="flex justify-end mb-4">
-              <button
-                aria-label="Close modal"
-                className="text-gray-700 hover:text-gray-900"
-                onClick={handleCloseModal}
-                type="button">
-                <XCircleIcon className="h-8 w-8" />
-              </button>
-            </header>
-            <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-              <div className="w-full md:w-1/2 bg-white flex items-center justify-center h-64 md:h-80 rounded-lg">
-                <Image
-                  alt={selectedItem.title}
-                  className="object-contain h-full w-full"
-                  placeholder="blur"
-                  src={selectedItem.image}
-                />
-              </div>
-              <div className="w-full md:w-1/2 z-50">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">{selectedItem.title}</h2>
-                <p className="text-sm text-gray-800 mb-4">{selectedItem.description}</p>
-                <div className="mb-4">
-                  {selectedItem.technologies && (
-                    <div className="flex flex-wrap gap-2">
-                      {selectedItem.technologies.map((tech, index) => (
-                        <span
-                          className="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300"
-                          key={`${tech}-${index}`}>
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                  )}
-                </div>
-                <div className="mb-4">
-                  <a
-                    className="text-blue-500 underline"
-                    href={selectedItem.url}
-                    onClick={e => e.stopPropagation()}
-                    ref={demoLinkRef}
-                    rel="noopener noreferrer"
-                    target="_blank">
-                    <LinkIcon className="h-4 w-4 inline-block" /> Link de la app
-                  </a>
-                </div>
-                {selectedItem.repository && (
-                  <div className="mb-4">
-                    <a
-                      className="text-blue-500 underline"
-                      href={selectedItem.repository}
-                      onClick={e => e.stopPropagation()}
-                      ref={githubLinkRef}
-                      rel="noopener noreferrer"
-                      target="_blank">
-                      <LinkIcon className="h-4 w-4 inline-block" /> Link de github
-                    </a>
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
+      
+      <PortfolioModal
+        demoLinkRef={demoLinkRef}
+        githubLinkRef={githubLinkRef}
+        modalRef={modalRef}
+        onClose={handleCloseModal}
+        selectedItem={selectedItem}
+        showModal={showModal}
+      />
     </Section>
   );
 });

@@ -119,11 +119,11 @@ const calculateAge = (birthDate: Date): number => {
   const today = new Date();
   let age = today.getFullYear() - birthDate.getFullYear();
   const monthDiff = today.getMonth() - birthDate.getMonth();
-  
+
   if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
     age--;
   }
-  
+
   return age;
 };
 
@@ -283,13 +283,11 @@ export const portfolioItems: PortfolioItem[] = [
     technologies: ['React', 'Tailwind', 'Context', 'PokeApi'],
   },
   {
-    title: 'KeyGameStore',
-    description:
-      'Es proyecto sencillo es un landing page para una tienda de claves de videojuegos',
-    url: 'https://keygamestore.netlify.app/',
+    title: 'Rico B2B',
+    description: 'Es la primera tienda B2B que desarrolle con Shopify, un proyecto bastante retador ya que es una tienda con muchas funcionalidades personalizadas, fue muy gratificante ver el resultado final.',
+    url: 'https://ricoh-imaging.eu',
     image: porfolioImage12,
-    repository: 'https://github.com/henryVentura14/KeyGameStore',
-    technologies: ['Javascript', 'Css', 'HTML'],
+    technologies: ['Shopify', 'Scss', 'Liquid', 'Javascript'],
   },
 ];
 
@@ -319,10 +317,12 @@ export const experience: TimelineItem[] = [
     title: 'Desarrollador Web',
     content: (
       <p>
-        Desarrollo de funcionalidades personalizadas con Liquid, adaptando temas y módulos para cumplir con los requisitos específicos de cada cliente.
-        Integración y consultas con GraphQL para optimizar la carga de datos y mejorar la experiencia del usuario.
-        Uso de Remix y JavaScript para construir aplicaciones web modernas y escalables, garantizando un rendimiento fluido tanto en el cliente como en el servidor.
-        Mantenimiento y mejora continua de los sitios existentes, abordando problemas de rendimiento y aplicando actualizaciones que aseguren la estabilidad y eficiencia de las plataformas.
+        Desarrollo de funcionalidades personalizadas con Liquid, adaptando temas y módulos para cumplir con los
+        requisitos específicos de cada cliente. Integración y consultas con GraphQL para optimizar la carga de datos y
+        mejorar la experiencia del usuario. Uso de Remix y JavaScript para construir aplicaciones web modernas y
+        escalables, garantizando un rendimiento fluido tanto en el cliente como en el servidor. Mantenimiento y mejora
+        continua de los sitios existentes, abordando problemas de rendimiento y aplicando actualizaciones que aseguren
+        la estabilidad y eficiencia de las plataformas.
       </p>
     ),
   },
