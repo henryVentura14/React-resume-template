@@ -73,24 +73,16 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Soy desarrollador web, vivo en <strong className="text-stone-100">Bogotá</strong> cuento con experiencia en la
-        creación de soluciones digitales personalizadas. Actualmente trabajo en
-        <strong className="text-stone-100"> Gradiweb</strong>, donde desarrollo funcionalidades a medida utilizando{' '}
-        <strong className="text-stone-100">Liquid</strong>, adapto temas y módulos para cumplir con los requisitos
-        específicos de cada cliente, e integro
-        <strong className="text-stone-100"> GraphQL</strong> para optimizar la carga de datos y mejorar la experiencia
-        del usuario. También empleo tecnologías modernas como
-        <strong className="text-stone-100"> Remix</strong> y <strong className="text-stone-100">TypeScript</strong> para
-        construir aplicaciones web escalables y de alto rendimiento.
+        Soy desarrollador web, vivo en <strong className="text-stone-100">Bogotá</strong> y cuento con experiencia en la creación de soluciones digitales personalizadas. Actualmente trabajo en <strong className="text-stone-100">Mercado Libre</strong> como Desarrollador Web Frontend en el proyecto Sell Your Item (SYI), donde diseño, desarrollo y optimizo interfaces dinámicas y escalables para facilitar la experiencia de los vendedores al publicar sus productos. Utilizo tecnologías como <strong className="text-stone-100">React</strong>, <strong className="text-stone-100">SCSS</strong> y <strong className="text-stone-100">pruebas unitarias</strong>, aplicando buenas prácticas de desarrollo, arquitectura de componentes y performance web.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Antes de Gradiweb, trabajé en <strong className="text-stone-100">Rappi</strong>, colaborando en la construcción
-        y mantenimiento de <strong className="text-stone-100">MiTienda</strong>, una aplicación web de gestión de
-        tiendas.
+        Antes de Mercado Libre, trabajé en <strong className="text-stone-100">Gradiweb</strong>, desarrollando funcionalidades personalizadas con Liquid, adaptando temas y módulos para clientes, e integrando GraphQL para optimizar la carga de datos. También empleé tecnologías modernas como Remix y TypeScript para construir aplicaciones web escalables y de alto rendimiento.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        En mi tiempo libre disfruto de los <strong className="text-stone-100">videojuegos</strong>, las{' '}
-        <strong className="text-stone-100">películas</strong> y las <strong className="text-stone-100">series</strong>.
+        Previamente, colaboré en <strong className="text-stone-100">Rappi</strong> en la construcción y mantenimiento de <strong className="text-stone-100">MiTienda</strong>, una aplicación web de gestión de tiendas.
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        En mi tiempo libre disfruto de los <strong className="text-stone-100">videojuegos</strong>, las <strong className="text-stone-100">películas</strong> y las <strong className="text-stone-100">series</strong>.
       </p>
     </>
   ),
@@ -139,7 +131,7 @@ export const aboutData: About = {
     {label: 'Nacionalidad', text: 'Venezolano / Colombiano', Icon: FlagIcon},
     {label: 'Pasatiempo', text: 'Videojuegos, deportes, peliculas y series', Icon: SparklesIcon},
     {label: 'Estudios', text: 'Ingeniero en Informática', Icon: AcademicCapIcon},
-    {label: 'Último  empleo', text: 'Desarrollador web - Gradiweb', Icon: BuildingOffice2Icon},
+    {label: 'Último  empleo', text: 'Software Developer - Mercado Libre', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -312,7 +304,19 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'Agosto 2024 - Actualidad',
+    date: 'Octubre 2025 - Actualidad',
+    location: 'Mercado Libre',
+    title: 'Desarrollador Web Frontend',
+    content: (
+      <p>
+        Formo parte del equipo de Mercado Libre, desempeñándome como Desarrollador Web Frontend en el proyecto Sell Your Item (SYI).
+        <br />
+        Mi rol consiste en diseñar, desarrollar y optimizar interfaces dinámicas y escalables que faciliten la experiencia de los vendedores al publicar sus productos en la plataforma. Trabajo con tecnologías como <strong>React</strong>, <strong>SCSS</strong> y <strong>pruebas unitarias</strong> (unit tests), aplicando buenas prácticas de desarrollo, arquitectura de componentes y performance web.
+      </p>
+    ),
+  },
+  {
+    date: 'Agosto 2024 - Septiembre 2025',
     location: 'Gradiweb - Gradiweb | Agencia E-commerce Shopify Partner',
     title: 'Desarrollador Web',
     content: (
