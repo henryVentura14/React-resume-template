@@ -9,12 +9,12 @@ const Resume: FC = memo(() => {
   return (
     <Section className="bg-neutral-100" sectionId={SectionId.Resume}>
       <div className="flex flex-col divide-y-2 divide-neutral-300">
-        <ResumeSection title="Estudios">
+  <ResumeSection title="Formación académica">
           {education.map((item, index) => (
             <TimelineItem item={item} key={`${item.title}-${index}`} />
           ))}
         </ResumeSection>
-        <ResumeSection title="Experiencia">
+  <ResumeSection title="Experiencia profesional">
           {experience.map((item, index) => (
             <TimelineItem item={item} key={`${item.title}-${index}`} />
           ))}

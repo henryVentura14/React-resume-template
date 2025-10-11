@@ -7,14 +7,30 @@ const TimelineItem: FC<{item: TimelineItemData}> = memo(({item}) => {
   return (
     <div className="flex flex-col pb-8 text-center last:pb-0 md:text-left">
       <div className="flex flex-col pb-4">
-        <h2 className="text-xl font-bold"> <a href={urlTitle} target='_blank'>{title}</a></h2>
-        <div className="flex items-center justify-center gap-x-2 md:justify-start">
-          <span className="flex-1 text-sm font-medium italic sm:flex-none"><a href={urlLocation} target='_blank'>{location}</a></span>
-          <span>•</span>
-          <span className="flex-1 text-sm sm:flex-none">{date}</span>
+        <h3 className="text-lg md:text-xl font-semibold text-neutral-900">
+          {urlTitle ? (
+            <a className="hover:underline" href={urlTitle} rel="noreferrer" target="_blank">
+              {title}
+            </a>
+          ) : (
+            title
+          )}
+        </h3>
+        <div className="mt-2 flex flex-col items-center gap-1 text-sm text-neutral-600 md:flex-row md:items-center md:gap-x-3">
+          <span className="font-medium italic md:flex-none">
+            {urlLocation ? (
+              <a className="hover:underline" href={urlLocation} rel="noreferrer" target="_blank">
+                {location}
+              </a>
+            ) : (
+              location
+            )}
+          </span>
+          <span className="hidden md:inline">•</span>
+          <span className="md:flex-none">{date}</span>
         </div>
       </div>
-      {content}
+      <div className="prose prose-sm max-w-none text-neutral-700">{content}</div>
     </div>
   );
 });

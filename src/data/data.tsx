@@ -53,13 +53,13 @@ export const homePageMeta: HomepageMeta = {
  */
 export const SectionId = {
   Hero: 'hero',
-  About: 'sobre mí',
-  Contact: 'contáctame',
-  Portfolio: 'portafolio',
-  Resume: 'resumen',
-  Skills: 'skills',
-  Stats: 'stats',
-  Testimonials: 'testimonios',
+  About: 'Sobre mí',
+  Contact: 'Contáctame',
+  Portfolio: 'Portafolio',
+  Resume: 'Resumen',
+  Skills: 'Skills',
+  Stats: 'Stats',
+  Testimonials: 'Testimonios',
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -69,20 +69,20 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `Henry J Ventura.`,
+  name: `Henry Ventura.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Soy desarrollador web, vivo en <strong className="text-stone-100">Bogotá</strong> y cuento con experiencia en la creación de soluciones digitales personalizadas. Actualmente trabajo en <strong className="text-stone-100">Mercado Libre</strong> como Desarrollador Web Frontend en el proyecto Sell Your Item (SYI), donde diseño, desarrollo y optimizo interfaces dinámicas y escalables para facilitar la experiencia de los vendedores al publicar sus productos. Utilizo tecnologías como <strong className="text-stone-100">React</strong>, <strong className="text-stone-100">SCSS</strong> y <strong className="text-stone-100">pruebas unitarias</strong>, aplicando buenas prácticas de desarrollo, arquitectura de componentes y performance web.
+        Soy desarrollador web con residencia en <strong className="text-stone-100">Bogotá</strong> y experiencia en el diseño y desarrollo de soluciones digitales a medida. Actualmente formo parte de <strong className="text-stone-100">Mercado Libre</strong> como Desarrollador Web Frontend en el proyecto Sell Your Item (SYI), donde diseño y optimizo interfaces dinámicas y escalables para mejorar el proceso de publicación de productos. Trabajo con tecnologías como <strong className="text-stone-100">React</strong>, <strong className="text-stone-100">SCSS</strong> y <strong className="text-stone-100">pruebas unitarias</strong>, aplicando buenas prácticas de arquitectura de componentes y optimización de rendimiento.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Antes de Mercado Libre, trabajé en <strong className="text-stone-100">Gradiweb</strong>, desarrollando funcionalidades personalizadas con Liquid, adaptando temas y módulos para clientes, e integrando GraphQL para optimizar la carga de datos. También empleé tecnologías modernas como Remix y TypeScript para construir aplicaciones web escalables y de alto rendimiento.
+        Anteriormente trabajé en <strong className="text-stone-100">Gradiweb</strong>, desarrollando funcionalidades personalizadas con Liquid, adaptando temas y módulos, e integrando GraphQL para optimizar la carga de datos. También he utilizado Remix y TypeScript para construir aplicaciones web escalables y de alto rendimiento.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Previamente, colaboré en <strong className="text-stone-100">Rappi</strong> en la construcción y mantenimiento de <strong className="text-stone-100">MiTienda</strong>, una aplicación web de gestión de tiendas.
+        Previamente colaboré en <strong className="text-stone-100">Rappi</strong> en el desarrollo y mantenimiento de <strong className="text-stone-100">MiTienda</strong>, una plataforma para la gestión integral de tiendas.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        En mi tiempo libre disfruto de los <strong className="text-stone-100">videojuegos</strong>, las <strong className="text-stone-100">películas</strong> y las <strong className="text-stone-100">series</strong>.
+        En mi tiempo libre disfruto de los <strong className="text-stone-100">videojuegos</strong>, el <strong className="text-stone-100">cine</strong> y las <strong className="text-stone-100">series</strong>.
       </p>
     </>
   ),
@@ -91,13 +91,13 @@ export const heroData: Hero = {
     {
       target: '_blank',
       href: 'https://drive.google.com/file/d/1RXb4ebZ5EsYLZb58uz3YKeUzwUpykZeG/view?usp=sharing',
-      text: 'CV en PDF',
+  text: 'Descargar CV (PDF)',
       primary: true,
       Icon: ArrowDownTrayIcon,
     },
     {
       href: `#${SectionId.Contact}`,
-      text: 'Contáctame',
+  text: 'Contáctame',
       primary: false,
     },
   ],
@@ -124,14 +124,14 @@ const calculateAge = (birthDate: Date): number => {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Apasionado por la tecnología, disfruto aprender continuamente y mantenerme al día con las tendencias del desarrollo web. La programación y el diseño de soluciones innovadoras son mi mayor motivación. Valoro el trabajo en equipo y me encanta compartir conocimientos y experiencias para contribuir al éxito colectivo.`,
+  description: `Apasionado por la tecnología, me mantengo en constante aprendizaje para seguir las tendencias del desarrollo web. Me motivan la programación y la creación de soluciones innovadoras. Valoro el trabajo en equipo y disfruto compartir conocimientos y experiencias para contribuir al éxito colectivo.`,
   aboutItems: [
-    {label: 'Ubicación', text: 'Bogota, DC', Icon: MapIcon},
+    {label: 'Ubicación', text: 'Bogotá D.C., Colombia', Icon: MapIcon},
     {label: 'Edad', text: calculateAge(BIRTH_DATE).toString(), Icon: CalendarIcon},
-    {label: 'Nacionalidad', text: 'Venezolano / Colombiano', Icon: FlagIcon},
-    {label: 'Pasatiempo', text: 'Videojuegos, deportes, peliculas y series', Icon: SparklesIcon},
-    {label: 'Estudios', text: 'Ingeniero en Informática', Icon: AcademicCapIcon},
-    {label: 'Último  empleo', text: 'Software Developer - Mercado Libre', Icon: BuildingOffice2Icon},
+    {label: 'Nacionalidad', text: 'Venezolano y colombiano', Icon: FlagIcon},
+    {label: 'Intereses', text: 'Videojuegos, deportes, cine y series', Icon: SparklesIcon},
+    {label: 'Formación', text: 'Ingeniero en Informática', Icon: AcademicCapIcon},
+    {label: 'Último empleo', text: 'Desarrollador Web — Mercado Libre', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -186,7 +186,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Mykommu',
     description:
-      'MyKommu es una app de gestión de eventos y seminarios web, un proyecto donde tuve la oportunidad de participar las primeras versiones de esta app, donde aprendí mucho sobre el desarrollo con react',
+      'MyKommu es una aplicación para la gestión de eventos y seminarios web. Participé en sus primeras versiones, adquiriendo experiencia práctica en desarrollo con React.',
     url: 'https://www.mykommu.com/',
     image: porfolioImage1,
     technologies: ['React', 'Sass', 'Redux', 'Webpack'],
@@ -194,7 +194,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Easy CL',
     description:
-      'Easy Cl es un e-commerce de una de las ferreterías más grandes y populares en LATAM, fue un proyecto bastante retador, pero logramos sacarlo adelante y entregarlo a tiempo, la unión de varios equipos (vtex e itglobers).',
+      'Easy CL es el e-commerce de una de las ferreterías más grandes de LATAM. Fue un proyecto desafiante que se entregó a tiempo gracias a la colaboración entre equipos (VTEX e Itglobers).',
     url: 'https://www.easy.cl/',
     image: porfolioImage2,
     technologies: ['React', 'Vtex', 'Css', 'Jquery', 'Grunt'],
@@ -202,7 +202,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Jumbo Co',
     description:
-      'Jumbo.co es una tienda online que pertenece a una cadena de supermercados muy famosos en LATAM, tuve la oportunidad de desarrollar parte de sus funcionalidades.',
+      'Jumbo.co es la tienda online de una cadena de supermercados reconocida en LATAM. Participé en el desarrollo de funcionalidades clave del sitio.',
     url: 'https://www.tiendasjumbo.co/',
     image: porfolioImage3,
     technologies: ['React', 'Vtex'],
@@ -210,7 +210,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Mi Tienda',
     description:
-      'Mi Tienda es una app para la gestión de e-commerce que pertenece a Rappi, brinda muchas opciones de configuración de tiendas, campañas, productos y horarios, participe en este proyecto aportando muchas horas de trabajo donde desarrollas módulos complejos como la sección de puntos de venta y onboarding.',
+      'Mi Tienda es una plataforma de e-commerce de Rappi con amplias opciones de configuración para tiendas, campañas y productos. Contribuí desarrollando módulos complejos, como la sección de puntos de venta y el onboarding.',
     url: 'https://mitienda.rappi.com.co/',
     image: porfolioImage4,
     technologies: ['Angular', 'Redux', 'Sass', 'TypeScript', 'Webpack', 'Microfrontends'],
@@ -218,7 +218,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Under Armour Co',
     description:
-      'Under Armour es una marca famosa de ropa e implementos deportivos a nivel mundial, participé como desarrollador frontend developer de este proyecto de e-commerce.',
+      'Under Armour es una marca global de ropa deportiva. Participé como desarrollador frontend en este proyecto de e-commerce.',
     url: 'https://www.underarmour.com.co/',
     image: porfolioImage5,
     technologies: ['React', 'Vtex'],
@@ -226,7 +226,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Esika Co',
     description:
-      'Esika es una famosa marca de belleza, participé como desarrollador frontend developer de este proyecto de e-commerce.',
+      'Esika es una reconocida marca de belleza. Participé como desarrollador frontend en este proyecto de e-commerce.',
     url: 'https://esika.tiendabelcorp.com.co/',
     image: porfolioImage6,
     technologies: ['React', 'Vtex'],
@@ -234,7 +234,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Generik Paris',
     description:
-      'Tuve la oportunidad de colaborar en el desarrollo de una tienda en línea basada en Shopify, orientada a la venta de productos de belleza en Francia. El proyecto incluyó personalizaciones avanzadas para implementar promociones especiales, así como funcionalidades específicas para la gestión de mercados y localización del contenido. Se priorizó una experiencia de usuario optimizada y adaptada al público objetivo, asegurando la escalabilidad de la tienda y su alineación con las necesidades comerciales del cliente.',
+      'Colaboré en el desarrollo de una tienda online en Shopify orientada al mercado francés. Implementé personalizaciones avanzadas para promociones y funcionalidades específicas de localización y gestión de mercados, priorizando una experiencia de usuario optimizada y escalable.',
     url: 'https://generik.fr/',
     image: porfolioImage7,
     technologies: ['Shopify', 'Scss', 'Liquid', 'Javascript', 'Remix', 'TypeScript'],
@@ -242,7 +242,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Cryptocurrencies',
     description:
-      'Cryptocurrencies es una app creada por mí donde puedes consumir una API que maneja información sobre criptomonedas, esta app sirve para conocer el valor actual de cualquier cripto moneda y conversión de precios en monedas de LATAM como el peso colombiano, el peso chileno o el peso argentino.',
+      'Aplicación que consume una API pública para mostrar información y conversiones de criptomonedas, con soporte para monedas de LATAM (COP, CLP, ARS).',
     url: 'https://crypto-ant.netlify.app/',
     image: porfolioImage8,
     repository: 'https://github.com/henryVentura14/Ant-design-crypto-app',
@@ -251,7 +251,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Dragon Ball Vue',
     description:
-      'Desarrollé una aplicación web interactiva utilizando Vue 3, TypeScript y Tailwind CSS que permite a los usuarios explorar personajes del universo Dragon Ball de manera eficiente y atractiva. La aplicación consume la API de Dragon Ball para proporcionar una experiencia rica en datos y visualmente atractiva. La app nos permite visualizar y buscar los personajes, además cuenta con una carga progresiva mediante el scroll de la página.',
+      'Aplicación interactiva desarrollada con Vue 3 y TypeScript que consume la API de Dragon Ball para mostrar y buscar personajes, con carga progresiva mediante scroll.',
     url: 'https://dragon-ball-one.vercel.app/',
     image: porfolioImage9,
     repository: 'https://github.com/henryVentura14/Dragon-ball-vue',
@@ -260,7 +260,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Jansport Pe',
     description:
-      'Jansport Pe es una famosa marca de moda, que venden maletas y tenis, participé como desarrollador frontend developer de este proyecto de e-commerce.',
+      'Jansport Pe es una marca de moda reconocida; participé como desarrollador frontend en este proyecto de e-commerce.',
     url: 'https://www.jansport.pe/',
     image: porfolioImage10,
     technologies: ['React', 'Vtex'],
@@ -268,7 +268,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Poke Battle',
     description:
-      '¡Esta épica app la desarrollé para emular las batallas Pokémon que teníamos al jugar algunos de los videojuegos más famosos de la saga, donde podemos listar o buscar 3 Pokémon y enfrentarlos a otros 3 Pokémon esta aplicación determinara quien es el ganador sumando las estadistas de cada equipo el que tenga más, gana!',
+      'Aplicación que simula batallas Pokémon permitiendo seleccionar y enfrentar equipos. Calcula el ganador sumando las estadísticas de cada equipo.',
     url: 'https://pokebatller.vercel.app/',
     image: porfolioImage11,
     repository: 'https://github.com/henryVentura14/Pokebatller',
@@ -276,7 +276,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Rico B2B',
-    description: 'Es la primera tienda B2B que desarrolle con Shopify, un proyecto bastante retador ya que es una tienda con muchas funcionalidades personalizadas, fue muy gratificante ver el resultado final.',
+    description: 'Primera tienda B2B desarrollada con Shopify, con múltiples funcionalidades personalizadas.',
     url: 'https://ricoh-imaging.eu',
     image: porfolioImage12,
     technologies: ['Shopify', 'Scss', 'Liquid', 'Javascript'],
@@ -293,8 +293,7 @@ export const education: TimelineItem[] = [
     title: 'Ingeniero en Informática',
     content: (
       <p>
-        Aprendí a realizar pruebas de seguridad de sistemas, auditar sistemas web y desarrollé una tesis basada en la
-        implementación de un sistema completo alojado en un servidor web.
+        Adquirí conocimientos en pruebas de seguridad y auditoría de sistemas web. Mi tesis consistió en la implementación de un sistema completo desplegado en un servidor web.
       </p>
     ),
     urlTitle: 'https://drive.google.com/file/d/1JCFN99U124h-hcuAxgrYZOXYHiYMJYBn/view',
@@ -309,9 +308,9 @@ export const experience: TimelineItem[] = [
     title: 'Desarrollador Web Frontend',
     content: (
       <p>
-        Formo parte del equipo de Mercado Libre, desempeñándome como Desarrollador Web Frontend en el proyecto Sell Your Item (SYI).
+        Formo parte del equipo de Mercado Libre como Desarrollador Web Frontend en el proyecto Sell Your Item (SYI).
         <br />
-        Mi rol consiste en diseñar, desarrollar y optimizar interfaces dinámicas y escalables que faciliten la experiencia de los vendedores al publicar sus productos en la plataforma. Trabajo con tecnologías como <strong>React</strong>, <strong>SCSS</strong> y <strong>pruebas unitarias</strong> (unit tests), aplicando buenas prácticas de desarrollo, arquitectura de componentes y performance web.
+        Mi rol incluye diseñar, desarrollar y optimizar interfaces dinámicas y escalables para mejorar la experiencia de los vendedores al publicar productos. Trabajo con tecnologías como <strong>React</strong>, <strong>SCSS</strong> y <strong>pruebas unitarias</strong>, aplicando buenas prácticas de desarrollo, arquitectura de componentes y optimización de rendimiento.
       </p>
     ),
   },
@@ -321,12 +320,7 @@ export const experience: TimelineItem[] = [
     title: 'Desarrollador Web',
     content: (
       <p>
-        Desarrollo de funcionalidades personalizadas con Liquid, adaptando temas y módulos para cumplir con los
-        requisitos específicos de cada cliente. Integración y consultas con GraphQL para optimizar la carga de datos y
-        mejorar la experiencia del usuario. Uso de Remix y JavaScript para construir aplicaciones web modernas y
-        escalables, garantizando un rendimiento fluido tanto en el cliente como en el servidor. Mantenimiento y mejora
-        continua de los sitios existentes, abordando problemas de rendimiento y aplicando actualizaciones que aseguren
-        la estabilidad y eficiencia de las plataformas.
+        Desarrollo de funcionalidades personalizadas con Liquid, adaptación de temas y módulos para cumplir los requisitos de cada cliente. Integración con GraphQL para optimizar la carga de datos y mejorar la experiencia de usuario. Uso de Remix y JavaScript para construir aplicaciones escalables y de alto rendimiento. Mantenimiento y mejora continua de sitios existentes, abordando problemas de rendimiento y aplicando actualizaciones para asegurar estabilidad y eficiencia.
       </p>
     ),
   },
@@ -336,9 +330,7 @@ export const experience: TimelineItem[] = [
     title: 'Desarrollador Frontend',
     content: (
       <p>
-        Mi primera experiencia en una gran empresa de Latam, he aprendido mucho sobre como se forma un gran equipo de
-        desarrollo y que rol juega cada miembro del equipo, he aprendido mucho sobre metodologías ágiles y como
-        multiplicar mi productividad, es un trabajo muy exigente. Empresa que emplea al menos al 100% de sus empleados.
+        Fue mi primera experiencia en una gran empresa de LATAM, donde aprendí cómo se conforman equipos de desarrollo y el rol de cada miembro. Me familiaricé con metodologías ágiles y técnicas para incrementar la productividad en entornos exigentes.
       </p>
     ),
   },
@@ -352,26 +344,26 @@ export const testimonial: TestimonialSection = {
   testimonials: [
     {
       name: 'Anthony Medina',
-      text: 'Es bueno tener colegas como Henry que siempre están disponibles y dispuestos a ayudar.',
+      text: 'Henry es un colaborador disponible y siempre dispuesto a ayudar, una gran aportación para cualquier equipo.',
       image:
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfmARy0OnZne63mLv7c0lMDm-XFKP3GOukLaujWBfiqCmF6kfb1ulD7mFdgHYtYmoUTIQ&usqp=CAU',
     },
     {
       name: 'Shamaru Primera',
-      text: 'Conozco a Henry desde hace muchos años y hemos tenido la oportunidad de trabajar juntos, siento que ha crecido mucho y ha adquirido muy buenas experiencias con el tiempo.',
+      text: 'Conozco a Henry desde hace años; ha demostrado un crecimiento profesional notable y ha acumulado experiencia relevante en sus proyectos.',
       image: 'https://cdn-icons-png.flaticon.com/256/1801/1801308.png',
     },
     {
       name: 'David Ochoa',
-      text: 'Henry es un gran profesional que demuestra grandes habilidades, nunca tiene miedo de contribuir y compartir sus conocimientos.',
+      text: 'Henry es un profesional competente que demuestra habilidades sólidas y contribuye proactivamente compartiendo su conocimiento.',
       image: 'https://cdn.iconscout.com/icon/free/png-256/free-laptop-user-1-1179329.png',
     },
   ],
 };
 
 export const contact: ContactSection = {
-  headerText: 'Ponte en contacto conmigo.',
-  description: 'Puedes escribir un correo electrónico o por alguna de mis redes sociales.',
+  headerText: 'Contáctame',
+  description: 'Puedes escribirme por correo electrónico o a través de mis redes sociales.',
   items: [
     {
       type: ContactType.Email,
@@ -380,7 +372,7 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Location,
-      text: 'Bogota DC, Colombia',
+      text: 'Bogotá D.C., Colombia',
       href: 'https://goo.gl/maps/bbEY2KFkXKn9WR2o9',
     },
     {
